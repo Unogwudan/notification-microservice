@@ -12,19 +12,12 @@ The notifications are sent out Asynchronously to improve performance, and the ca
 gets an acknowledgement for the request sent.
 
 ## Running the project locally
-To run the project locally you need to:
- 
-1. Have mysql installed and running;
+To Run the project 
 
-2. Create the db "reloadly" on mysql.
+1. Ensure spring.profiles.active=dev is set
+2. Simply click on the run button in your IDE or run the Java command
 
-3. Update the dev.properties file with your mysql credentials
-
-4. Set spring.profiles.active=dev in the application.properties file
-
-5. Run the project
-
-6. Open your browser and go to "http://localhost:8084/swagger-ui.html" to access the 
+- Open your browser and go to "http://localhost:8084/swagger-ui.html" to access the 
 swagger doc from where you can test the endpoints.
 
 

@@ -13,8 +13,10 @@ public enum ResponseCode {
     ACCOUNT_NOT_ACTIVE("126", "1200","Account not active", HttpStatus.BAD_REQUEST),
     ALREADY_EXIST("137", "4001","Account already exist", HttpStatus.FORBIDDEN),
     NOT_FOUND("139", "3004","Account not found", HttpStatus.NOT_FOUND),
+    UNMARSHALL_EXCEPTION("170", "1700", "Json conversion failed", HttpStatus.EXPECTATION_FAILED),
     OUT_OF_BOUNDS("264", "3002","The result of the operation would be a nominal value that is out of bounds.", HttpStatus.BAD_REQUEST),
     PERMISSION_DENIED("266", "4000","Permission denied", HttpStatus.UNAUTHORIZED),
+    BAD_REQUEST("400", "4000", "Invalid request", HttpStatus.BAD_REQUEST),
     OTHER_ERROR_NO_RETRY("999", "3001","Other Error No Retry", HttpStatus.BAD_REQUEST),
     INTERNAL_SERVER_ERROR("500", "3001", "There was an error while processing the request.", HttpStatus.INTERNAL_SERVER_ERROR);
 

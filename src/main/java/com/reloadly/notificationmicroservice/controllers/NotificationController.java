@@ -1,4 +1,4 @@
-package com.reloadly.notificationmicroservice.controller;
+package com.reloadly.notificationmicroservice.controllers;
 
 import com.reloadly.notificationmicroservice.constants.CommonConstants;
 import com.reloadly.notificationmicroservice.dto.request.EmailRequest;

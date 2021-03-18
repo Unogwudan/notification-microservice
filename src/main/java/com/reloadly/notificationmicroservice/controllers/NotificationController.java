@@ -4,6 +4,7 @@ import com.reloadly.notificationmicroservice.constants.CommonConstants;
 import com.reloadly.notificationmicroservice.dto.request.EmailRequest;
 import com.reloadly.notificationmicroservice.dto.response.NotificationMicroServiceResponse;
 import com.reloadly.notificationmicroservice.services.MailerService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
 
+@Slf4j
 @RestController
 @RequestMapping(CommonConstants.API_VERSION + "notifications")
 public class NotificationController {

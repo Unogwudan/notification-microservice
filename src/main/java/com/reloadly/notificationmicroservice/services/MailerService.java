@@ -4,7 +4,6 @@ import com.reloadly.notificationmicroservice.dto.request.EmailRequest;
 import com.reloadly.notificationmicroservice.dto.response.NotificationMicroServiceResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.MailException;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
@@ -19,9 +18,6 @@ import static com.reloadly.notificationmicroservice.enums.ResponseCode.OK;
 @Slf4j
 @Service
 public class MailerService {
-
-    @Value("${spring.sendgrid.api-key}")
-    private String SG_API_KEY;
 
     @Autowired
     private JavaMailSender javaMailSender;
